@@ -1,2 +1,3 @@
 xcuserdata/
-Bible.xcscheme
+*.xcscheme/
+.build/
