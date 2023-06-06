@@ -8,8 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject private var bibleViewModel = BibleViewModel()
+    
     var body: some View {
-        Text("API KEY: \(Secrets.apiBibleApiKey)")
+        VStack {
+            Button("Fetch") {
+                bibleViewModel.fetch()
+            }
+            .buttonStyle(.borderedProminent)
+            List {
+                ForEach(bibleViewModel.bibleSummarys, id: \.id) { bible in
+                    Text("\(bible.name)")
+                }
+            }
+        }
     }
 }
 

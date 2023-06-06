@@ -14,6 +14,10 @@
 		D98D4F232A2D49BC009401C5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D98D4F222A2D49BC009401C5 /* .gitignore */; };
 		D98D4F262A2D4B25009401C5 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D4F252A2D4B25009401C5 /* Secrets.swift */; };
 		D98D4F282A2D4C79009401C5 /* APIBibleConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D4F272A2D4C79009401C5 /* APIBibleConfig.swift */; };
+		D98D4F2C2A2D4E4E009401C5 /* BibleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D4F2B2A2D4E4E009401C5 /* BibleViewModel.swift */; };
+		D9DF33462A2E27E9000F44DC /* Bible.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DF33452A2E27E9000F44DC /* Bible.swift */; };
+		D9DF33482A2E2904000F44DC /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DF33472A2E2904000F44DC /* Language.swift */; };
+		D9DF334A2A2E2C1F000F44DC /* AudioBible.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DF33492A2E2C1F000F44DC /* AudioBible.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		D98D4F222A2D49BC009401C5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		D98D4F252A2D4B25009401C5 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		D98D4F272A2D4C79009401C5 /* APIBibleConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBibleConfig.swift; sourceTree = "<group>"; };
+		D98D4F2B2A2D4E4E009401C5 /* BibleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleViewModel.swift; sourceTree = "<group>"; };
+		D9DF33452A2E27E9000F44DC /* Bible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bible.swift; sourceTree = "<group>"; };
+		D9DF33472A2E2904000F44DC /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		D9DF33492A2E2C1F000F44DC /* AudioBible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioBible.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 		D98D4F132A2D4994009401C5 /* Bible */ = {
 			isa = PBXGroup;
 			children = (
+				D9DF334B2A2E2D7B000F44DC /* ViewModel */,
 				D98D4F242A2D4B12009401C5 /* Model */,
 				D98D4F142A2D4994009401C5 /* BibleApp.swift */,
 				D98D4F162A2D4994009401C5 /* ContentView.swift */,
@@ -80,8 +89,19 @@
 			children = (
 				D98D4F252A2D4B25009401C5 /* Secrets.swift */,
 				D98D4F272A2D4C79009401C5 /* APIBibleConfig.swift */,
+				D9DF33452A2E27E9000F44DC /* Bible.swift */,
+				D9DF33472A2E2904000F44DC /* Language.swift */,
+				D9DF33492A2E2C1F000F44DC /* AudioBible.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D9DF334B2A2E2D7B000F44DC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D98D4F2B2A2D4E4E009401C5 /* BibleViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,8 +176,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D98D4F172A2D4994009401C5 /* ContentView.swift in Sources */,
+				D9DF33462A2E27E9000F44DC /* Bible.swift in Sources */,
 				D98D4F282A2D4C79009401C5 /* APIBibleConfig.swift in Sources */,
 				D98D4F262A2D4B25009401C5 /* Secrets.swift in Sources */,
+				D9DF33482A2E2904000F44DC /* Language.swift in Sources */,
+				D9DF334A2A2E2C1F000F44DC /* AudioBible.swift in Sources */,
+				D98D4F2C2A2D4E4E009401C5 /* BibleViewModel.swift in Sources */,
 				D98D4F152A2D4994009401C5 /* BibleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
