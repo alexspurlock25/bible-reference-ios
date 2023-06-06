@@ -30,12 +30,15 @@ class BibleViewModel: ObservableObject {
             if let data = data, error == nil {
                 let decoder = JSONDecoder()
                 
-                do {
-                    let response = try decoder.decode(BibleSummaryResponse.self, from: data)
-                    self.bibleSummarys = response.data
-    
-                } catch {
-                    print("\(error)")
+                DispatchQueue.main.async {
+                    do {
+                        let response = try decoder.decode(BibleSummaryResponse.self, from: data)
+                        self.bibleSummarys = response.data
+                    } catch {
+                        // handle error
+                        print("\(error)")
+                    }
+                    
                 }
             }
 
