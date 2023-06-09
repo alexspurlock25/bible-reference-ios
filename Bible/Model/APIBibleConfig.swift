@@ -8,5 +8,5 @@
 import Foundation
 
 struct APIBibleConfig {
-    static let baseURL = "api.scripture.api.bible"
+    static let baseURL = "https://api.scripture.api.bible"
 }
