@@ -11,6 +11,10 @@ class BibleViewModel: ObservableObject {
     @Published var bibles: [Bible] = []
     @Published var bibleSummarys: [BibleSummary] = []
     
+    init() {
+        fetch()
+    }
+    
     func fetch() {
         guard let url = URL(string: "\(APIBibleConfig.baseURL)/v1/bibles") else {
             print("Invalid URL")

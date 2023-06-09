@@ -11,14 +11,12 @@ struct ContentView: View {
     @ObservedObject private var bibleViewModel = BibleViewModel()
     
     var body: some View {
-        VStack {
-            Button("Fetch") {
-                bibleViewModel.fetch()
-            }
-            .buttonStyle(.borderedProminent)
+        NavigationView {
             List {
                 ForEach(bibleViewModel.bibleSummarys, id: \.id) { bible in
-                    Text("\(bible.name)")
+                    NavigationLink("\(bible.name)") {
+                        BooksView(bibleId: bible.id)
+                    }
                 }
             }
         }
